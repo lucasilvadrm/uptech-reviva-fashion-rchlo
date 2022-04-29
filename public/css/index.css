@@ -80,9 +80,27 @@ body {
   flex-direction: row;
 } */
 
-.last-releases .last-releases--list {
-  display: flex;
+.last-releases {
+  margin-top: 1rem;
+  /* background-color: yellowgreen; */
+  /* padding: 0.5rem 1rem; */
 }
+
+.last-releases .last-releases--title {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+
+.last-releases .last-releases--list {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0.5rem 1rem;
+}
+
+/* .last-releases--list .item {
+  background-color: aqua;
+} */
 
 .last-releases--list .shirt {
   display: flex;
@@ -90,8 +108,26 @@ body {
   border: 1px solid #C4C4C4;
 }
 
+.banner {
+  width: 100%;
+  height: 6rem;
+  background-color: #C4C4C4;
+}
+
 .shirt .size {
   align-self: flex-end;
+}
+
+.shirt img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info-contact {
+  width: 100%;
+  height: 12rem;
+  background-color: #C4C4C4;
+
 }
 
 
