@@ -1,0 +1,98 @@
+body {
+  font-size: 62.5%;
+  /* background-color: aqua; */
+}
+
+.header {
+  width: 80%;
+  height: 4rem;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title .title {
+  font-size: 1.7rem;
+}
+
+.header-title span {
+  font-size: 0.5rem;
+  align-self: flex-end;
+}
+
+.menu {
+  width: 80%;
+  height: 3rem;
+  background-color: #C4C4C4;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-main {
+  width: 80%;
+  margin: 0 auto;
+  /* padding: 0 20px 0 20px; */
+}
+
+.container-main .search {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-main .search input {
+  width: 100%;
+  border: 1px solid #C4C4C4;
+  margin-right: 0.3rem;
+}
+
+.search .btn-search {
+  width: 80px;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .image-search {
+  width: 20px;
+}
+
+/* .container-main .last-releases {
+  display: flex;
+  flex-direction: row;
+} */
+
+.last-releases .last-releases--list {
+  display: flex;
+}
+
+.last-releases--list .shirt {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #C4C4C4;
+}
+
+.shirt .size {
+  align-self: flex-end;
+}
+
+
+
