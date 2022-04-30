@@ -187,9 +187,39 @@ body {
 .blog-intro {
   width: 100%;
   height: 20rem;
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  display: grid;
+  gap: 8px;
+  grid-template-rows: 3rem 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "blog-title blog-title"
+  "article-big article-small1"
+  "article-big article-small2";
+}
+
+.article-big {
+  width: 100%;
+  /* background-color: yellowgreen; */
+  grid-area: article-big;
+}
+
+.article-big .image {
+  width: 100%;
+  height: 12rem;
+  background-color: #C4C4C4;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-title {
+  grid-area: blog-title;
+  /* background-color: violet; */
 }
 
 .info-contact {
