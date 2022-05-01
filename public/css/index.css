@@ -191,13 +191,15 @@ body {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   display: grid;
-  gap: 8px;
+  /* gap: 16px; */
+  column-gap: 2.5rem;
+  row-gap: 1.5rem;
   grid-template-rows: 3rem 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "blog-title blog-title"
-  "article-big article-small1"
-  "article-big article-small2";
+  grid-template-areas:
+    "blog-title blog-title"
+    "article-big article-small-top"
+    "article-big article-small-bottom";
 }
 
 .article-big {
@@ -217,8 +219,31 @@ body {
   flex-direction: row;
 }
 
+.article-small-top {
+  grid-area: article-small-top;
+}
+
+.article-small-top .image, .article-small-bottom .image {
+  background-color: #C4C4C4;
+}
+
+.article-small-top .description, .article-small-top .image,
+.article-small-bottom .description, .article-small-bottom .image {
+  width: 50%;
+}
+
+.article-small-bottom {
+  grid-area: article-small-bottom;
+}
+
+.article-small-bottom .image, .article-small-top .image {
+  /* background-color: #C4C4C4; */
+  margin-right: 10px;
+}
+
 .blog-title {
   grid-area: blog-title;
+  font-weight: 700;
   /* background-color: violet; */
 }
 
@@ -226,8 +251,4 @@ body {
   width: 100%;
   height: 12rem;
   background-color: #C4C4C4;
-
 }
-
-
-
