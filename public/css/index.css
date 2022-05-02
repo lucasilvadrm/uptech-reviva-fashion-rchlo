@@ -4,28 +4,34 @@ body {
 }
 
 .header {
-  width: 100%;
+  /* width: 100%; */
+  max-width: 1280px;
+  margin: auto;
   height: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  /* margin: 0 auto */
 }
 
 .title-main {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  text-align: end;
 }
 
-.title-main .title {
+.title-main h1 {
   font-size: 1.7rem;
 }
 
 .title-main span {
-  font-size: 0.5rem;
-  align-self: flex-end;
+  font-size: 0.7rem;
+  /* align-self: flex-end; */
+}
+
+.header .icon-purchase {
+  width: 20px;
 }
 
 .menu {
@@ -37,14 +43,16 @@ body {
 }
 
 .menu ul {
-  width: 100%;
+  /* width: 100%; */
+  width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .container-main {
-  width: 940px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -73,15 +81,18 @@ body {
   width: 20px;
 }
 
-.last-releases {
+.last-releases, .summer-collection {
   margin-top: 1rem;
 }
 
-.last-releases .last-releases--title {
+.last-releases .last-releases--title,
+.summer-collection .summer-collection--title {
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.last-releases .last-releases--list {
+.last-releases .last-releases--list,
+.summer-collection .summer-collection--list {
   box-sizing: border-box;
   display: grid;
   gap: 30px;
@@ -159,30 +170,39 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  position: relative;
 }
 
-.banner .text {
-  width: 60%;
-  margin: 0 auto;
+.banner-text {
+  letter-spacing: 10px;
+  font-size: 1.2rem;
+}
+
+.banner-text::first-line {
+  letter-spacing: 0;
 }
 
 .banner-title {
-  display: flex;
-  flex-direction: column;
+  bottom: 0;
+  margin-right: .4rem;
+  margin-bottom: .2rem;
+  position: absolute;
+  text-align: end;
+  right: 0;
 }
 
-.banner-title .title {
+.banner-title h1 {
   font-size: 1.7rem;
 }
 
 .banner-title span {
   font-size: 0.5rem;
-  align-self: flex-end;
 }
 
 .blog-intro {
   width: 100%;
-  height: 20rem;
+  height: 500px;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   display: grid;
@@ -208,7 +228,7 @@ body {
 
 .article-big .image {
   width: 100%;
-  height: 12rem;
+  height: 80%;
   background-color: #C4C4C4;
 }
 
@@ -239,16 +259,32 @@ body {
 }
 
 /* footer */
-.info-contact {
+footer {
   width: 100%;
-  height: 15rem;
   background-color: #C4C4C4;
+}
+
+.info-contact {
+  width: 1280px;
+  margin: 0 auto;
+  height: 15rem;
   display: grid;
   grid-template-rows: 4rem 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "footer-title . . ."
-  "menu-itens social-media contact newsletter";
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-areas:
+    "footer-title . . ."
+    "menu-itens social-media contact newsletter";
+}
+
+.info-contact h3 {
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
+
+.menu-itens .item,
+.social-media .item,
+.contact .item {
+  margin-bottom: 10px;
 }
 
 .footer-title {
@@ -270,7 +306,7 @@ body {
 }
 
 .social-media--list li {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .social-media--list .item img {
@@ -281,6 +317,40 @@ body {
   grid-area: contact;
 }
 
+.whatsapp-content, 
+.phone-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.whatsapp-content p, 
+.phone-content p {
+  margin-right: 8px;
+}
+
 .newsletter {
   grid-area: newsletter;
+}
+
+.newsletter .input-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.newsletter .input-button input {
+  width: 70%;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.newsletter .input-button button {
+  background-color: #666666;
+  width: 30%;
+}
+
+.input-button button p {
+  color: white;
+  /* align-self: center; */
 }
