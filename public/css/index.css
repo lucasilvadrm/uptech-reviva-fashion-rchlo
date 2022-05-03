@@ -1,13 +1,21 @@
-body {
+:root {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif !important;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
 }
 
 .header {
   /* width: 100%; */
   max-width: 1280px;
   margin: auto;
-  height: 4rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,12 +27,8 @@ body {
   text-align: end;
 }
 
-.title-main h1 {
-  font-size: 1.7rem;
-}
-
 .title-main span {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .header .icon-purchase {
@@ -33,14 +37,14 @@ body {
 
 .menu {
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   background-color: #C4C4C4;
   margin: 0 auto;
   display: flex;
+  font-size: 1.6rem !important;
 }
 
 .menu ul {
-  /* width: 100%; */
   width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -52,23 +56,25 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 1rem 0 1rem;
 }
 
 .container-main .search {
-  height: 2rem;
+  height: 3.5rem;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
 }
 
 .container-main .search input {
-  width: 100%;
+  width: 92%;
   border: 1px solid #C4C4C4;
-  margin-right: 0.3rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .search .btn-search {
-  width: 80px;
+  width: 8%;
   background-color: #C4C4C4;
   display: flex;
   justify-content: center;
@@ -79,8 +85,8 @@ body {
   width: 20px;
 }
 
-.last-releases, .summer-collection {
-  margin-top: 1rem;
+.last-releases {
+  margin-top: 2rem;
 }
 
 .last-releases .last-releases--title,
@@ -93,21 +99,29 @@ body {
 .summer-collection .summer-collection--list {
   box-sizing: border-box;
   display: grid;
-  gap: 80px;
+  gap: 8rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .item .description-item {
-  margin-bottom: 10px;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
   display: grid;
-  gap: 6px;
+  gap: .6rem;
+}
+
+.product-description, .price {
+  font-size: 1.8rem;
+}
+
+.price {
+  font-weight: 700;
 }
 
 .item .product {
   display: flex;
   flex-direction: column;
-  border: 1px solid #C4C4C4;
-  margin-bottom: 0.3rem;
+  border: 1px solid #c4c4c4a7;
 }
 
 .item .btn-shopping-cart {
@@ -115,15 +129,19 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 2.5rem;
+  height: 4rem;
   background-color: #C4C4C4;
   position: relative;
   color: #000000;
-  font-size: .9rem;
+  font-size: 1.3rem;
   transition: 500ms;
 }
 
-.btn-shopping-cart:hover {
+.all-buttons {
+  transition: 500ms;
+}
+
+.all-buttons:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 3px 7px -1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 7px -1px rgba(0, 0, 0, 0.2);
@@ -132,7 +150,7 @@ body {
 
 .btn-shopping-cart .icon-purchase {
   width: 20px;
-  padding-right: 5px;
+  padding-right: .5rem;
   position: absolute;
   right: 0;
 }
@@ -149,27 +167,28 @@ body {
 }
 
 .product-size ul li {
-  padding-right: 6px;
+  padding-right: .6rem;
 }
 
 .select-size {
-  border: 1px solid #000000;
-  width: 20px;
-  height: 20px;
+  border: 1px solid #666666;
+  width: 2.3rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.select-size p {
-  font-size: 0.9rem;
+.select-size a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #666666;
 }
 
 .product img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  /* padding-top: 20px; */
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -178,7 +197,7 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
-  height: 7rem;
+  height: 16rem;
   background-color: #C4C4C4;
   display: flex;
   flex-direction: column;
@@ -189,8 +208,8 @@ body {
 }
 
 .banner-text {
-  letter-spacing: 10px;
-  font-size: 1.2rem;
+  letter-spacing: 1rem;
+  font-size: 1.9rem;
 }
 
 .banner-text::first-line {
@@ -199,35 +218,36 @@ body {
 
 .banner-title {
   bottom: 0;
-  margin-right: .4rem;
-  margin-bottom: .2rem;
+  margin-right: .7rem;
+  margin-bottom: .7rem;
   position: absolute;
   text-align: end;
   right: 0;
 }
 
-.banner-title h1 {
-  font-size: 1.7rem;
-}
-
 .banner-title span {
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .blog-intro {
   width: 100%;
-  height: 500px;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  height: 50rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   display: grid;
   column-gap: 2.5rem;
-  row-gap: 1.5rem;
-  grid-template-rows: 2rem 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 6rem;
+  grid-template-rows: 4rem 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "blog-title blog-title"
     "article-big article-small-top"
     "article-big article-small-bottom";
+}
+
+.blog-intro p {
+  font-size: 2rem;
 }
 
 .blog-title {
@@ -242,8 +262,9 @@ body {
 
 .article-big .image {
   width: 100%;
-  height: 80%;
+  height: 35rem;
   background-color: #C4C4C4;
+  margin-bottom: 1rem;
 }
 
 .display {
@@ -272,37 +293,47 @@ body {
   margin-right: 10px;
 }
 
-/* footer */
-/* footer {
-  width: 100%;
-  background-color: #C4C4C4;
-} */
-
 .info-contact {
+  border-top: 1px solid #C4C4C4;
+  padding: 1rem 1rem 0 1rem;
+  /* background-color: #C4C4C4; */
   max-width: 1280px;
   margin: 0 auto;
-  height: 15rem;
+  height: 30rem;
   display: grid;
-  grid-template-rows: 4rem 1fr;
+  grid-template-rows: 6rem 1fr;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-areas:
     "footer-title . . ."
     "menu-itens social-media contact newsletter";
 }
 
-.info-contact h3 {
+.info-contact h4 {
   font-weight: 700;
   margin-bottom: .6rem;
 }
 
-.menu-itens .item,
-.social-media .item,
-.contact .item {
-  margin-bottom: 10px;
+.menu-itens .title,
+.social-media .title,
+.contact .title,
+.newsletter .title,
+.info-contact .item,
+.info-contact p {
+font-size: 1.7rem;
+}
+
+.menu-itens .item, .contact .item {
+  margin-bottom: 1.7rem;
+}
+
+.menu-itens .item:nth-child(1) {
+  margin-top: 1.7rem;
 }
 
 .footer-title {
   grid-area: footer-title;
+  text-align: end;
+  justify-self: flex-start;
 }
 
 .menu-itens {
@@ -316,7 +347,7 @@ body {
 .social-media--list {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .social-media--list li {
@@ -324,11 +355,15 @@ body {
 }
 
 .social-media--list .item img {
-  width: 1.4rem;
+  width: 2.7rem;
 }
 
 .contact {
   grid-area: contact;
+}
+
+.contact .title, .contact p {
+  margin-bottom: 1.7rem;
 }
 
 .whatsapp-content,
@@ -338,8 +373,8 @@ body {
   align-items: center;
 }
 
-.whatsapp-content p,
-.phone-content p {
+.whatsapp-content a,
+.phone-content a {
   margin-right: 8px;
 }
 
@@ -367,5 +402,4 @@ body {
 
 .input-button button p {
   color: white;
-  /* align-self: center; */
 }
