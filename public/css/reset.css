@@ -84,3 +84,7 @@ select {
 	font-weight: inherit;
 	font-family: inherit;
 }
+
+body {
+	box-sizing: border-box;
+}
