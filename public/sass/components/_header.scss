@@ -1,0 +1,23 @@
+.header {
+    align-items: center;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
+    padding: 1rem 2rem 1rem 2rem;
+    .logo {
+        text-align: end;
+        .logo__title {
+            font-weight: 700;
+            margin: 0;
+        }
+        .logo__subtitle {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    }
+    .icon__purchase {
+        width: 20px;
+    }
+  }
