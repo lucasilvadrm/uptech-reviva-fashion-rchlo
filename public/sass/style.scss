@@ -1,2 +1,38 @@
 @import './abstract/base';
-@import './components/header';
+
+// import header
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/icon-purchase';
+
+// import menu
+@import './components/menu/menu';
+@import './components/menu/menu-list';
+@import './components/menu/menu-item';
+
+//import main
+@import './components/main/container';
+@import './components/main/search';
+@import './components/main/search-button';
+@import './components/main/search-input';
+@import './components/main/search-icon';
+
+//import product
+@import './components/product/product';
+@import './components/product/product-details';
+@import './components/product/product-image';
+@import './components/product/product-item';
+@import './components/product/product-items';
+@import './components/product/product-size';
+@import './components/product/product-thumb';
+@import './components/product/product-title';
+@import './components/product/product-description';
+@import './components/product/product-button';
+
+// banner
+@import './components/banner/banner';
+@import './components/banner/banner-text';
+@import './components/banner/banner-title';
+
+// products
+@import './components/product-list/products';

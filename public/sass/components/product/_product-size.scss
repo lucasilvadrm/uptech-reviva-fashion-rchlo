@@ -1,0 +1,39 @@
+.product__size {
+    border: none;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 800;
+    justify-content: space-around;
+    padding: 0;
+    text-align: center;
+    width: 120px;
+    grid-area: product-size;
+    align-self: flex-end;
+
+    .size__input {
+        display: none;
+
+        &:checked+.size__label {
+            background-color: black;
+            border: solid 1px #C4C4C4;
+            color: #FFFFFF;
+        }
+    }
+
+    .size__label {
+        background-color: #ffffffad;
+        border-radius: 30%;
+        border: solid .1rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        height: 2.7rem;
+        margin: .7rem;
+        width: 1.5em;
+
+        &:hover {
+            background-color: #e6e6e6;
+            cursor: pointer;
+        }
+    }
+}

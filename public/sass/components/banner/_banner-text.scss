@@ -1,0 +1,8 @@
+.banner__text {
+    letter-spacing: 1rem;
+    font-size: 1.9rem;
+}
+
+.banner__text::first-line {
+    letter-spacing: 0;
+}

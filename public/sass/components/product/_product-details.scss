@@ -1,0 +1,12 @@
+.product__details {
+    display: grid;
+    grid-template-rows: 4rem 16rem 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    grid-template-areas: 
+    "product-title"
+    "product-description"
+    "product-list"
+    "product-size"
+    "product-button";
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="/public/sass/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
@@ -19,5 +21,209 @@
         </div>
         <img class="icon__purchase" src="./images/purchase-icon-grey.png" alt="ícone carrinho de compras cinza">
     </header>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#">Página Inicial</a></li>
+            <li class="menu__item"><a href="#">Moda Masculina</a></li>
+            <li class="menu__item"><a href="#">Moda Feminina</a></li>
+            <li class="menu__item"><a href="#">Moda Infantil</a></li>
+            <li class="menu__item"><a href="#">Manual de Moda</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="search">
+            <input type="text" class="search__input"
+                placeholder="Faça sua busca aqui se já souber o que está procurando...">
+            <button class="search__button">
+                <img class="search__icon" src="./images/search.png" alt="ícone de pesquisa">
+            </button>
+        </div>
+        <section class="product">
+            <div class="product__image">
+                <img src="/public/images/shirt.png" alt="">
+            </div>
+            
+            <div class="product__details">
+                <h2 class="product__title">Camiseta Reviva K22, Preta, R$ 39,90</h2>
+                <p class="product__description">
+                    Mauris scelerisque pharetra elit id consequat. In ut felis at metus ullamcorper dictum. Aenean neque
+                    nisi,
+                    cursus nec sollicitudin at, tempor id lectus. Donec et est ut ante eleifend tincidunt eu non odio.
+                    Curabitur fringilla neque et metus pretium, pulvinar mattis mauris tristique</p>
+                <ul class="product__items">
+                    <li class="product__item">
+                        <img src="/public/images/shirt.png" alt="" class="product__thumb">
+                    </li>
+                    <li class="product__item">
+                        <img src="/public/images/shirt.png" alt="" class="product__thumb">
+                    </li>
+                    <li class="product__item">
+                        <img src="/public/images/shirt.png" alt="" class="product__thumb">
+                    </li>
+                    <li class="product__item">
+                        <img src="/public/images/shirt.png" alt="" class="product__thumb">
+                    </li>
+                </ul>
+                <fieldset class="product__size">
+                    <input class="size__input" type="radio" name="select-size" id="size-p" checked >
+                    <label class="size__label" for="size-p">P</label>
+                    <input class="size__input" type="radio" name="select-size" id="size-m">
+                    <label class="size__label" for="size-m">M</label>
+                    <input class="size__input" type="radio" name="select-size" id="size-g">
+                    <label class="size__label" for="size-g">G</label>
+                </fieldset>
+                <button class="product__button">POR NA SACOLA
+                    <img class="icon__purchase" src="./images/purchase-icon-white.png"
+                        alt="ícone carrinho de compras branco">
+                </button>
+            </div>
+        </section>
+
+        <a href="#" class="banner">
+            <p class="banner__text">
+                Fique por dentro de tudo que há de novidade no mundo da moda!
+                <br>Baixe já nosso manual de moda!
+            </p>
+            <div class="banner__title">
+                <h1>Reviva Fashion</h1>
+                <span>By RCHLO</span>
+            </div>
+        </a>
+
+        <!-- <section class="products">
+            <h2 class="products__title">Quem comprou camiseta Reviva K22, também levou um desses para casa!</h2>
+            <ul class="products__items">
+                <li class="products__item">
+                    <div class="item__details">
+                        <img src="images/products/verao-1.png" alt="top cropped feminino">
+                        <div class="product-size">
+                            <ul>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">P</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">M</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">G</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <p class="item__product--price">R$ 69,90</p>
+                    </div>
+                    <button class="button__purchase">POR NA SACOLA
+                        <img class="icon__purchase" src="./images/purchase-icon-white.png"
+                            alt="ícone carrinho de compras branco">
+                    </button>
+                </li>
+                <li class="products__item">
+                    <div class="item__details">
+                        <img src="images/products/verao-1.png" alt="top cropped feminino">
+                        <div class="product-size">
+                            <ul>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">P</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">M</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">G</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <p class="item__product--price">R$ 69,90</p>
+                    </div>
+                    <button class="button__purchase">POR NA SACOLA
+                        <img class="icon__purchase" src="./images/purchase-icon-white.png"
+                            alt="ícone carrinho de compras branco">
+                    </button>
+                </li>
+                <li class="products__item">
+                    <div class="item__details">
+                        <img src="images/products/verao-1.png" alt="top cropped feminino">
+                        <div class="product-size">
+                            <ul>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">P</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">M</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">G</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <p class="item__product--price">R$ 69,90</p>
+                    </div>
+                    <button class="button__purchase">POR NA SACOLA
+                        <img class="icon__purchase" src="./images/purchase-icon-white.png"
+                            alt="ícone carrinho de compras branco">
+                    </button>
+                </li>
+                <li class="products__item">
+                    <div class="item__details">
+                        <img src="images/products/verao-1.png" alt="top cropped feminino">
+                        <div class="product-size">
+                            <ul>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">P</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">M</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-size">
+                                        <a href="#">G</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <p class="item__product--price">R$ 69,90</p>
+                    </div>
+                    <button class="button__purchase">POR NA SACOLA
+                        <img class="icon__purchase" src="./images/purchase-icon-white.png"
+                            alt="ícone carrinho de compras branco">
+                    </button>
+                </li>
+            </ul>
+        </section> -->
+    </main>
 </body>
+
 </html>

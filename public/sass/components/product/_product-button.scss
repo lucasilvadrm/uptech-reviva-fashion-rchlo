@@ -1,0 +1,20 @@
+.product__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 4rem;
+    background-color: #C4C4C4;
+    position: relative;
+    color: #000000;
+    font-size: 1.3rem;
+    transition: 500ms;
+    grid-area: product-button;
+
+    .icon__purchase {
+        width: 20px;
+        padding-right: .5rem;
+        position: absolute;
+        right: 0;
+    }
+}

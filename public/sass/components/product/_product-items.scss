@@ -1,0 +1,7 @@
+.product__items {
+    box-sizing: border-box;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: product-list;
+}
