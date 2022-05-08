@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="/public/sass/carrinho.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo__title">Reviva Fashion</h1>
+            <span class="logo__subtitle">by RCHLO</span>
+        </div>
+        <img class="icon__purchase" src="./images/purchase-icon-grey.png" alt="ícone carrinho de compras cinza">
+    </header>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#">Página Inicial</a></li>
+            <li class="menu__item"><a href="#">Moda Masculina</a></li>
+            <li class="menu__item"><a href="#">Moda Feminina</a></li>
+            <li class="menu__item"><a href="#">Moda Infantil</a></li>
+            <li class="menu__item"><a href="#">Manual de Moda</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="search">
+            <input type="text" class="search__input"
+                placeholder="Faça sua busca aqui se já souber o que está procurando...">
+            <button class="search__button">
+                <img class="search__icon" src="./images/search.png" alt="ícone de pesquisa">
+            </button>
+        </div>
+        <section class="wallet">
+            <h2 class="wallet__title">Minha Sacola</h2>
+            <ul class="wallet__list">
+                <li class="details__item">
+                    <div class="detail__thumb">
+                        <img src="/public/images/shirt.png" alt="">
+                    </div>
+                    <div class="detail__name">
+                        <h3 class="detail_title">Produto</h3>
+                        <p class="detail__description">Camiseta Reviva K22</p>
+                    </div>
+                    <div class="detail__size">
+                        <h3 class="detail__title">Tamanho escolhido</h3>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size" id="size-p" checked>
+                            <label class="size__label" for="size-p">P</label>
+                            <input class="size__input" type="radio" name="select-size" id="size-m">
+                            <label class="size__label" for="size-m">M</label>
+                            <input class="size__input" type="radio" name="select-size" id="size-g">
+                            <label class="size__label" for="size-g">G</label>
+                        </fieldset>
+                    </div>
+                    <div class="detail__price">
+                        <h3 class="detail__title">Valor</h3>
+                        <p class="detail__value">R$ 39,90</p>
+                    </div>
+                    <div class="detail__quantity">
+                        <h3 class="detail__title">Quantidade</h3>
+                        <input class="detail__input" type="number" name="" value="1" id="quantity">
+                    </div>
+                    <div class="detail__subtotal">
+                        <h3 class="detail__title">Subtotal</h3>
+                        <p class="detail__value">R$ 39,90</p>
+                    </div>
+                </li>
+                <li class="details__item">
+                    <div class="detail__thumb">
+                        <img src="/public/images/shirt.png" alt="">
+                    </div>
+                    <div class="detail__name">
+                        <h3 class="detail_title">Produto</h3>
+                        <p class="detail__description">Camiseta Reviva K22</p>
+                    </div>
+                    <div class="detail__size">
+                        <h3 class="detail__title">Tamanho escolhido</h3>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size" id="size-p" checked>
+                            <label class="size__label" for="size-p">P</label>
+                            <input class="size__input" type="radio" name="select-size" id="size-m">
+                            <label class="size__label" for="size-m">M</label>
+                            <input class="size__input" type="radio" name="select-size" id="size-g">
+                            <label class="size__label" for="size-g">G</label>
+                        </fieldset>
+                    </div>
+                    <div class="detail__price">
+                        <h3 class="detail__title">Valor</h3>
+                        <p class="detail__value">R$ 39,90</p>
+                    </div>
+                    <div class="detail__quantity">
+                        <h3 class="detail__title">Quantidade</h3>
+                        <input class="detail__input" type="number" name="" value="1" id="quantity">
+                    </div>
+                    <div class="detail__subtotal">
+                        <h3 class="detail__title">Subtotal</h3>
+                        <p class="detail__value">R$ 39,90</p>
+                    </div>
+                </li>
+            </ul>
+            <article class="cart-total">
+                <div class="total">
+                    <h3 class="total__title">Total</h3>
+                    <p class="total__value">R$ 159,70</p>
+                </div>
+                <ul class="quantity-price">
+                    <li class="quantity-price__item">
+                        <p>1 x 39,90 = 39,90</p>
+                    </li>
+                    <li class="quantity-price__item">
+                        <p>2 x 59,90 = 119,90</p>
+                    </li>
+                </ul>
+                <button class="wallet__button">
+                    Ir para pagamento
+                </button>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">
+            <h1 class="logo__title">Reviva Fashion</h1>
+            <span class="logo__subtitle">by RCHLO</span>
+        </div>
+        <div class="menu__itens">
+            <h4 class="menu__title">Menu</h4>
+            <ul>
+                <li class="menu__item"><a href="#">Página Inicial</a></li>
+                <li class="menu__item"><a href="#">Moda Masculina</a></li>
+                <li class="menu__item"><a href="#">Moda Feminina</a></li>
+                <li class="menu__item"><a href="#">Manual da Moda</a></li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h4 class="social-media__title">Siga-no nas redes sociais</h4>
+            <ul class="social-media__list">
+                <li class="item">
+                    <a href="https://pt-br.facebook.com/" target="blank">
+                        <figure>
+                            <img src="./images/facebook-icon.png" alt="ícone do facebook">
+                        </figure>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="./images/twitter-icon.png" alt="ícone do twitter">
+                        </figure>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="./images/instagram-icon.png" alt="ícone do instagram">
+                        </figure>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="./images/youtube-icon.png" alt="ícone do youtube">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h4 class="contact__title">Entre e contato</h4>
+            <ul class="contact__items">
+                <li class="contact__item contact__name">Contato</li>
+                <li class="contact__item"><a href="#">reviva@rchio.com.br</a></li>
+                <li class="contact__item whatsapp__content">
+                    <a href="#">WhatsApp</a>
+                    <img class="whatsapp__icon" src="./images/wpp-icon.png" alt="ícone do whatsapp">
+                </li>
+                <li class="contact__item phone__content">
+                    <a class="phone__number" href="#">11 2123-3321</a>
+                    <img class="phone__icon" src="./images/phone-icon.png" alt="ícone de telefone">
+                </li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h4 class="newsletter__title">Assine nossa newsletter</h4>
+            <div class="newsletter__sign">
+                <input type="text">
+                <button>
+                    Assinar Já
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

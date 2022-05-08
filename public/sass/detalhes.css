@@ -45,6 +45,10 @@ body {
           box-sizing: border-box;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -610,4 +614,4 @@ body {
   color: white;
   font-size: 1.7rem;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=detalhes.css.map */

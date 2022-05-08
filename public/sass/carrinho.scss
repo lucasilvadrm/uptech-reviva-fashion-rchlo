@@ -1,0 +1,27 @@
+@import './abstract/base';
+
+// utils
+@import './components/utils';
+
+// import header
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/icon-purchase';
+
+// import menu
+@import './components/menu/menu';
+@import './components/menu/menu-list';
+@import './components/menu/menu-item';
+
+//import main
+@import './components/main/container';
+@import './components/main/search';
+@import './components/main/search-button';
+@import './components/main/search-input';
+@import './components/main/search-icon';
+
+// import wallet
+@import './components/wallet/wallet';
+
+// import footer
+@import './components/footer/footer';

@@ -1,5 +1,8 @@
 @import './abstract/base';
 
+// utils
+@import './components/utils';
+
 // import header
 @import './components/header/header';
 @import './components/header/logo';
