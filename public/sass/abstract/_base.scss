@@ -1,17 +1,10 @@
 @import './variables';
 
 :root {
-    font-size: 62.5%;
+    font-size: $font-size--default;
 }
 
-html {
-	width: 100vw;
-	height: 100vh;
-}
-
-body {
-	width: 100%;
-	height: 100%;
+html, body, fieldset, figure, p, h1, h2, h3, h4, ul, li {
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -22,14 +15,13 @@ ol, ul {
 	list-style: none;
 }
 
-h1, h2, h3, ul {
-	margin: 0;
-	padding: 0;
-}
-
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+img {
+	width: inherit;
 }
 
 button {

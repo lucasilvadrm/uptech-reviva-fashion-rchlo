@@ -42,7 +42,7 @@
             <div class="product__image">
                 <img src="/public/images/shirt.png" alt="">
             </div>
-            
+
             <div class="product__details">
                 <h2 class="product__title">Camiseta Reviva K22, Preta, R$ 39,90</h2>
                 <p class="product__description">
@@ -64,18 +64,20 @@
                         <img src="/public/images/shirt.png" alt="" class="product__thumb">
                     </li>
                 </ul>
-                <fieldset class="product__size">
-                    <input class="size__input" type="radio" name="select-size" id="size-p" checked >
-                    <label class="size__label" for="size-p">P</label>
-                    <input class="size__input" type="radio" name="select-size" id="size-m">
-                    <label class="size__label" for="size-m">M</label>
-                    <input class="size__input" type="radio" name="select-size" id="size-g">
-                    <label class="size__label" for="size-g">G</label>
-                </fieldset>
-                <button class="product__button">POR NA SACOLA
-                    <img class="icon__purchase" src="./images/purchase-icon-white.png"
-                        alt="ícone carrinho de compras branco">
-                </button>
+                <div class="product__actions">
+                    <fieldset class="product__size">
+                        <input class="size__input" type="radio" name="select-size" id="size-p" checked>
+                        <label class="size__label" for="size-p">P</label>
+                        <input class="size__input" type="radio" name="select-size" id="size-m">
+                        <label class="size__label" for="size-m">M</label>
+                        <input class="size__input" type="radio" name="select-size" id="size-g">
+                        <label class="size__label" for="size-g">G</label>
+                    </fieldset>
+                    <button class="product__button">POR NA SACOLA
+                        <img class="icon__purchase" src="./images/purchase-icon-white.png"
+                            alt="ícone carrinho de compras branco">
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -90,140 +92,180 @@
             </div>
         </a>
 
-        <!-- <section class="products">
-            <h2 class="products__title">Quem comprou camiseta Reviva K22, também levou um desses para casa!</h2>
-            <ul class="products__items">
-                <li class="products__item">
+        <section class="product__list">
+            <h2 class="product__title">Quem comprou camiseta Reviva K22, também levou um desses para casa!</h2>
+            <ul class="product__items">
+                <li class="item">
                     <div class="item__details">
                         <img src="images/products/verao-1.png" alt="top cropped feminino">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-p1">
+                            <label class="size__label" for="size-p1">P</label>
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-m1">
+                            <label class="size__label" for="size-m1">M</label>
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-g1">
+                            <label class="size__label" for="size-g1">G</label>
+                        </fieldset>
                     </div>
                     <div class="item__description">
-                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo
+                        </h3>
                         <p class="item__product--price">R$ 69,90</p>
                     </div>
-                    <button class="button__purchase">POR NA SACOLA
+                    <button class="item__button">POR NA SACOLA
                         <img class="icon__purchase" src="./images/purchase-icon-white.png"
                             alt="ícone carrinho de compras branco">
                     </button>
                 </li>
-                <li class="products__item">
+                <li class="item">
                     <div class="item__details">
                         <img src="images/products/verao-1.png" alt="top cropped feminino">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-p2">
+                            <label class="size__label" for="size-p2">P</label>
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-m2">
+                            <label class="size__label" for="size-m2">M</label>
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-g2">
+                            <label class="size__label" for="size-g2">G</label>
+                        </fieldset>
                     </div>
                     <div class="item__description">
-                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo
+                        </h3>
                         <p class="item__product--price">R$ 69,90</p>
                     </div>
-                    <button class="button__purchase">POR NA SACOLA
+                    <button class="item__button">POR NA SACOLA
                         <img class="icon__purchase" src="./images/purchase-icon-white.png"
                             alt="ícone carrinho de compras branco">
                     </button>
                 </li>
-                <li class="products__item">
+                <li class="item">
                     <div class="item__details">
                         <img src="images/products/verao-1.png" alt="top cropped feminino">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-p3">
+                            <label class="size__label" for="size-p3">P</label>
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-m3">
+                            <label class="size__label" for="size-m3">M</label>
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-g3">
+                            <label class="size__label" for="size-g3">G</label>
+                        </fieldset>
                     </div>
                     <div class="item__description">
-                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo
+                        </h3>
                         <p class="item__product--price">R$ 69,90</p>
                     </div>
-                    <button class="button__purchase">POR NA SACOLA
+                    <button class="item__button">POR NA SACOLA
                         <img class="icon__purchase" src="./images/purchase-icon-white.png"
                             alt="ícone carrinho de compras branco">
                     </button>
                 </li>
-                <li class="products__item">
+                <li class="item">
                     <div class="item__details">
                         <img src="images/products/verao-1.png" alt="top cropped feminino">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-p4">
+                            <label class="size__label" for="size-p4">P</label>
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-m4">
+                            <label class="size__label" for="size-m4">M</label>
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-g4">
+                            <label class="size__label" for="size-g4">G</label>
+                        </fieldset>
                     </div>
                     <div class="item__description">
-                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
+                        <h3 class="item__product--description">Top Cropped Feminino Frente Única Verde AK by Riachuelo
+                        </h3>
                         <p class="item__product--price">R$ 69,90</p>
                     </div>
-                    <button class="button__purchase">POR NA SACOLA
+                    <button class="item__button">POR NA SACOLA
                         <img class="icon__purchase" src="./images/purchase-icon-white.png"
                             alt="ícone carrinho de compras branco">
                     </button>
                 </li>
             </ul>
-        </section> -->
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="logo">
+            <h1 class="logo__title">Reviva Fashion</h1>
+            <span class="logo__subtitle">By RCHLO</span>
+        </div>
+        <div class="menu__itens">
+            <h4 class="menu__title">Menu</h4>
+            <ul>
+                <li class="menu__item"><a href="#">Página Inicial</a></li>
+                <li class="menu__item"><a href="#">Moda Masculina</a></li>
+                <li class="menu__item"><a href="#">Moda Feminina</a></li>
+                <li class="menu__item"><a href="#">Manual da Moda</a></li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h4 class="social-media__title">Siga-no nas redes sociais</h4>
+            <ul class="social-media__list">
+                <li class="item">
+                    <a href="https://pt-br.facebook.com/" target="blank">
+                        <figure>
+                            <img src="./images/facebook-icon.png" alt="ícone do facebook">
+                        </figure>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="./images/twitter-icon.png" alt="ícone do twitter">
+                        </figure>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="./images/instagram-icon.png" alt="ícone do instagram">
+                        </figure>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="./images/youtube-icon.png" alt="ícone do youtube">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h4 class="contact__title">Entre e contato</h4>
+            <!-- <p class="contact__name">Contato</p> -->
+            <ul class="contact__items">
+                <li class="contact__item contact__name">Contato</li>
+                <li class="contact__item"><a href="#">reviva@rchio.com.br</a></li>
+                <li class="contact__item whatsapp__content">
+                    <!-- <div class="whatsapp__content"> -->
+                    <a href="#">WhatsApp</a>
+                    <img class="whatsapp__icon" src="./images/wpp-icon.png" alt="ícone do whatsapp">
+                    <!-- </div> -->
+                </li>
+                <li class="contact__item phone__content">
+                    <!-- <div class="phone__content"> -->
+                        <a class="phone__number" href="#">11 2123-3321</a>
+                        <img class="phone__icon" src="./images/phone-icon.png" alt="ícone de telefone">
+                    <!-- </div> -->
+                </li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h4 class="newsletter__title">Assine nossa newsletter</h4>
+            <div class="newsletter__sign">
+                <input type="text">
+                <button>
+                    Assinar Já
+                </button>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,91 @@
+.footer {
+    border-top: 1px solid #C4C4C4;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 1280px;
+    margin: auto;
+    height: 30rem;
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    grid-template-columns: 1fr 1.5fr 1.3fr 2fr;
+    grid-template-areas:
+        "logo logo logo logo"
+        "menu-itens social-media contact newsletter";
+
+    .menu__title,
+    .social-media__title,
+    .contact__title,
+    .newsletter__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        grid-area: logo;
+        justify-self: flex-start;
+    }
+
+    .menu__itens {
+        grid-area: menu-itens;
+    }
+
+    .menu__item,
+    .contact__item {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .social-media {
+        grid-area: social-media;
+
+        .social-media__list {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .item {
+                margin-right: 2rem;
+
+                img {
+                    width: 2.7rem;
+                }
+            }
+        }
+    }
+
+    .contact {
+        grid-area: contact;
+
+        .whatsapp__content,
+        .phone__content {
+            display: flex;
+
+            a {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .newsletter {
+        grid-area: newsletter;
+
+        .newsletter__sign {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+
+            input {
+                width: 70%;
+                height: 3rem;
+                margin-right: 1rem;
+                border: 1px solid #C4C4C4;
+            }
+
+            button {
+                background-color: #666666;
+                width: 30%;
+                color: white;
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

@@ -19,20 +19,23 @@
 
 //import product
 @import './components/product/product';
-@import './components/product/product-details';
-@import './components/product/product-image';
-@import './components/product/product-item';
-@import './components/product/product-items';
-@import './components/product/product-size';
-@import './components/product/product-thumb';
-@import './components/product/product-title';
-@import './components/product/product-description';
-@import './components/product/product-button';
+// @import './components/product/product-details';
+// @import './components/product/product-image';
+// @import './components/product/product-item';
+// @import './components/product/product-items';
+// @import './components/product/product-size';
+// @import './components/product/product-thumb';
+// @import './components/product/product-title';
+// @import './components/product/product-description';
+// @import './components/product/product-button';
 
 // banner
 @import './components/banner/banner';
 @import './components/banner/banner-text';
 @import './components/banner/banner-title';
 
-// products
-@import './components/product-list/products';
+// product-list
+@import './components/product-list/product-list';
+
+// footer
+@import './components/footer/footer';
