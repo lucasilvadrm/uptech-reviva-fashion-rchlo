@@ -1,9 +1,5 @@
 .product__item {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 12rem;
+    border: .1rem solid #C4C4C4;
+    padding: 2rem .5rem 2rem .5rem;
 }

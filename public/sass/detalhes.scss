@@ -4,9 +4,10 @@
 @import './components/utils';
 
 // import header
-@import './components/header/header';
-@import './components/header/logo';
-@import './components/header/icon-purchase';
+@import './components/header/global';
+
+// import logo
+@import './components/logo/global';
 
 // import menu
 @import './components/menu/menu';
@@ -21,24 +22,22 @@
 @import './components/main/search-icon';
 
 //import product
-@import './components/product/product';
-// @import './components/product/product-details';
-// @import './components/product/product-image';
-// @import './components/product/product-item';
-// @import './components/product/product-items';
-// @import './components/product/product-size';
-// @import './components/product/product-thumb';
-// @import './components/product/product-title';
-// @import './components/product/product-description';
-// @import './components/product/product-button';
+@import './components/product/global';
 
 // banner
-@import './components/banner/banner';
-@import './components/banner/banner-text';
-@import './components/banner/banner-title';
+@import './components/banner/global';
 
-// product-list
-@import './components/product-list/product-list';
+// related-products
+@import './components/related-products/global';
+
+// radio-button product-size
+@import './components/product-size';
+
+// buttons
+@import './components/buttons';
+
+//icons
+@import './components/icon-purchase';
 
 // footer
 @import './components/footer/footer';

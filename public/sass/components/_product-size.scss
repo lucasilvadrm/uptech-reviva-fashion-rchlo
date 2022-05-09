@@ -2,20 +2,21 @@
     border: none;
     display: flex;
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 700;
     justify-content: space-around;
     padding: 0;
     text-align: center;
-    width: 120px;
-    grid-area: product-size;
+    width: 12rem;
     align-self: flex-end;
+    padding-bottom: 1.2rem;
 
     .size__input {
         display: none;
 
         &:checked+.size__label {
             background-color: black;
-            border: solid 1px #C4C4C4;
+            // @include border();
+            border: 1px solid;
             color: #FFFFFF;
         }
     }

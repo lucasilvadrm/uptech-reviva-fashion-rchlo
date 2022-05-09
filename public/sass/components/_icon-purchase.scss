@@ -1,0 +1,12 @@
+.icon__purchase {
+    width: 2.8rem;
+}
+
+.container {
+    .icon__purchase {
+        width: 20px;
+        padding-right: .5rem;
+        position: absolute;
+        right: 0;
+    }
+}
