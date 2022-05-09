@@ -4,6 +4,10 @@
     font-size: $font-size--default;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html, body, fieldset, figure, p, h1, h2, h3, h4, ul, li {
     margin: 0;
 	padding: 0;
@@ -42,6 +46,6 @@ input {
 	font-family: inherit;
 }
 
-body {
-	box-sizing: border-box;
-}
+// body {
+// 	box-sizing: border-box;
+// }

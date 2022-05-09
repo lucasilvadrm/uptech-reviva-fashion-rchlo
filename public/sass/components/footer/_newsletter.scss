@@ -1,0 +1,24 @@
+.newsletter {
+    grid-area: newsletter;
+
+    .newsletter__sign {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+        input {
+            width: 70%;
+            height: 3rem;
+            margin-right: 1rem;
+            border: 1px solid #C4C4C4;
+            font-size: 1.5rem;
+        }
+
+        button {
+            background-color: #666666;
+            width: 30%;
+            color: white;
+            font-size: 1.7rem;
+        }
+    }
+}

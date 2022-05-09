@@ -18,8 +18,7 @@
 
     .wallet__list {
         grid-area: wallet__list;
-        // border: 1px solid;
-        .details__item {
+        .wallet__item {
             display: flex;
             justify-content: space-between;
             margin-bottom: 3rem;
@@ -27,7 +26,6 @@
                 border: 1px solid;
                 max-width: 18rem;
                 padding: 10px;
-                box-sizing: border-box;
 
                 img {
                     width: 100%;

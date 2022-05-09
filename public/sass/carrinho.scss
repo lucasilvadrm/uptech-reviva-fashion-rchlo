@@ -4,24 +4,31 @@
 @import './components/utils';
 
 // import header
-@import './components/header/header';
-@import './components/header/logo';
-@import './components/header/icon-purchase';
+@import './components/header/global';
+
+// import logo
+@import './components/logo/global';
 
 // import menu
-@import './components/menu/menu';
-@import './components/menu/menu-list';
-@import './components/menu/menu-item';
+@import './components/menu/global';
 
 //import main
-@import './components/main/container';
-@import './components/main/search';
-@import './components/main/search-button';
-@import './components/main/search-input';
-@import './components/main/search-icon';
+@import './components/main/global';
+
+//import input search
+@import './components/search/global';
+
+// radio-button product-size
+@import './components/product-size';
+
+// buttons
+@import './components/buttons';
+
+//icons
+@import './components/icons';
 
 // import wallet
-@import './components/wallet/wallet';
+@import './components/wallet/global';
 
 // import footer
-@import './components/footer/footer';
+@import './components/footer/global';

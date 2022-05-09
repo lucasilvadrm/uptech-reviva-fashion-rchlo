@@ -10,16 +10,13 @@
 @import './components/logo/global';
 
 // import menu
-@import './components/menu/menu';
-@import './components/menu/menu-list';
-@import './components/menu/menu-item';
+@import './components/menu/global';
 
 //import main
-@import './components/main/container';
-@import './components/main/search';
-@import './components/main/search-button';
-@import './components/main/search-input';
-@import './components/main/search-icon';
+@import './components/main/global';
+
+//import input search
+@import './components/search/global';
 
 //import product
 @import './components/product/global';
@@ -37,7 +34,7 @@
 @import './components/buttons';
 
 //icons
-@import './components/icon-purchase';
+@import './components/icons';
 
 // footer
-@import './components/footer/footer';
+@import './components/footer/global';

@@ -19,11 +19,6 @@
         margin-bottom: 1rem;
     }
 
-    .logo {
-        grid-area: logo;
-        justify-self: flex-start;
-    }
-
     .menu__itens {
         grid-area: menu-itens;
     }
@@ -32,61 +27,5 @@
     .contact__item {
         margin-bottom: 1rem;
         font-size: 1.8rem;
-    }
-
-    .social-media {
-        grid-area: social-media;
-
-        .social-media__list {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            .item {
-                margin-right: 2rem;
-
-                img {
-                    width: 2.7rem;
-                }
-            }
-        }
-    }
-
-    .contact {
-        grid-area: contact;
-
-        .whatsapp__content,
-        .phone__content {
-            display: flex;
-
-            a {
-                margin-right: 1rem;
-            }
-        }
-    }
-
-    .newsletter {
-        grid-area: newsletter;
-
-        .newsletter__sign {
-            display: flex;
-            justify-content: space-between;
-            align-items: stretch;
-
-            input {
-                width: 70%;
-                height: 3rem;
-                margin-right: 1rem;
-                border: 1px solid #C4C4C4;
-                font-size: 1.5rem;
-            }
-
-            button {
-                background-color: #666666;
-                width: 30%;
-                color: white;
-                font-size: 1.7rem;
-            }
-        }
     }
 }
