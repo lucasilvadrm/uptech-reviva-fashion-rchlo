@@ -19,7 +19,8 @@
             <h1 class="logo__title">Reviva Fashion</h1>
             <span class="logo__subtitle">by RCHLO</span>
         </div>
-        <img class="icon__purchase--header" src="./images/purchase-icon-grey.png" alt="ícone carrinho de compras cinza">
+        <!-- <img class="icon__purchase--header" src="./images/purchase-icon-grey.png" alt="ícone carrinho de compras cinza"> -->
+        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase--header"></i>
     </header>
     <nav class="menu">
         <ul class="menu__list">
@@ -36,7 +37,7 @@
             <input type="text" class="search__input"
                 placeholder="Faça sua busca aqui se já souber o que está procurando...">
             <button class="search__button">
-                <img class="search__icon" src="./images/search.png" alt="ícone de pesquisa">
+                <i aria-label="ícone de pesquisa" class="fa-solid fa-magnifying-glass search__icon"></i>
             </button>
         </div>
         <section class="wallet">
@@ -44,7 +45,7 @@
             <ul class="wallet__list">
                 <li class="wallet__item">
                     <div class="detail__thumb">
-                        <img src="/public/images/shirt.png" alt="">
+                        <img src="/public/images/products/lancamento-2.png" alt="">
                     </div>
                     <div class="detail__name">
                         <h3 class="detail__title">Produto</h3>
@@ -67,7 +68,7 @@
                     </div>
                     <div class="detail__quantity">
                         <h3 class="detail__title">Quantidade</h3>
-                        <input class="detail__input" type="number" name="" value="1" id="quantity">
+                        <input class="detail__input" type="number" min="1" max="99" name="quantity" id="quantity" value="1">
                     </div>
                     <div class="detail__subtotal">
                         <h3 class="detail__title">Subtotal</h3>
@@ -76,7 +77,7 @@
                 </li>
                 <li class="wallet__item">
                     <div class="detail__thumb">
-                        <img src="/public/images/shirt.png" alt="">
+                        <img src="/public/images/products/lancamento-1.png" alt="">
                     </div>
                     <div class="detail__name">
                         <h3 class="detail__title">Produto</h3>
@@ -85,12 +86,12 @@
                     <div class="detail__size">
                         <h3 class="detail__title">Tamanho escolhido</h3>
                         <fieldset class="product__size">
-                            <input class="size__input" type="radio" name="select-size" id="size-p" checked>
-                            <label class="size__label" for="size-p">P</label>
-                            <input class="size__input" type="radio" name="select-size" id="size-m">
-                            <label class="size__label" for="size-m">M</label>
-                            <input class="size__input" type="radio" name="select-size" id="size-g">
-                            <label class="size__label" for="size-g">G</label>
+                            <input class="size__input" type="radio" name="select-size2" id="size-p2" checked>
+                            <label class="size__label" for="size-p2">P</label>
+                            <input class="size__input" type="radio" name="select-size2" id="size-m2">
+                            <label class="size__label" for="size-m2">M</label>
+                            <input class="size__input" type="radio" name="select-size2" id="size-g2">
+                            <label class="size__label" for="size-g2">G</label>
                         </fieldset>
                     </div>
                     <div class="detail__price">
@@ -99,7 +100,7 @@
                     </div>
                     <div class="detail__quantity">
                         <h3 class="detail__title">Quantidade</h3>
-                        <input class="detail__input" type="number" name="" value="1" id="quantity">
+                        <input class="detail__input" type="number" min="1" max="99" name="quantity" id="quantity" value="1">
                     </div>
                     <div class="detail__subtotal">
                         <h3 class="detail__title">Subtotal</h3>
@@ -183,7 +184,7 @@
                 <li class="contact__item"><a href="#">reviva@rchio.com.br</a></li>
                 <li class="contact__item whatsapp__content">
                     <a href="#">WhatsApp</a>
-                    <img class="whatsapp__icon" src="./images/wpp-icon.png" alt="ícone do whatsapp">
+                    <i class="fa-brands fa-whatsapp whatsapp__icon"></i>
                 </li>
                 <li class="contact__item phone__content">
                     <a class="phone__number" href="#">11 2123-3321</a>
@@ -194,13 +195,14 @@
         <div class="newsletter">
             <h4 class="newsletter__title">Assine nossa newsletter</h4>
             <div class="newsletter__sign">
-                <input type="text">
-                <button>
+                <input class="newsletter__input" type="text">
+                <button class="newsletter__button">
                     Assinar Já
                 </button>
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/3c39b8c1ad.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

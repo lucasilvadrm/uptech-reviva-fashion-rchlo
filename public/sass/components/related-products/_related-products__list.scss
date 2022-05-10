@@ -2,4 +2,9 @@
     display: grid;
     gap: 8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
+
+    @media screen and (max-width: 1110px) {
+        // display: none;
+        grid-template-columns: 1fr 1fr;
+    }
 }

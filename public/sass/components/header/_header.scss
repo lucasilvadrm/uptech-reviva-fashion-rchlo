@@ -1,9 +1,14 @@
 .header {
     align-items: center;
     display: flex;
-    height: 8rem;
+    height: 12rem;
     justify-content: space-between;
     max-width: 1280px;
     margin: auto;
     padding: 1rem 2rem 1rem 2rem;
+
+    .purchase__icon--header {
+      color: #6a808f;
+      font-size: 3rem;
+    }
   }

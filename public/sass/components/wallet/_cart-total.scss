@@ -1,0 +1,25 @@
+@import '../../abstract/variables';
+
+.cart-total {
+    grid-area: cart-total;
+    background-color: $fourth-color;
+    padding: 0 1.3rem;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+
+    .total {
+        display: flex;
+        justify-content: space-between;
+
+        .total__title,
+        .total__value {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+
+    .quantity-price p {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}

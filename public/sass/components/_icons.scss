@@ -1,10 +1,26 @@
+@import '../abstract/variables';
+
 .icon__purchase--header {
-    width: 2.8rem;
+    color: #6a808f;
+    font-size: 3rem;
 }
 
 .icon__purchase {
-    width: 20px;
+    font-size: 2rem;
     padding-right: .5rem;
     position: absolute;
     right: 0;
+}
+
+.whatsapp__icon {
+    font-size: 2.2rem;
+}
+
+.phone__icon {
+    @extend .whatsapp__icon;
+}
+
+.search__icon {
+    font-size: 2rem;
+    color: $icon-search--color;
 }

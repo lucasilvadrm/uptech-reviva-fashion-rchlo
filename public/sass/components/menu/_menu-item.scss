@@ -1,5 +1,11 @@
-.menu__item {
-    a:hover {
-        text-decoration: underline;
+@import '../../abstract/variables';
+
+.menu {
+    .menu__item {
+        color: $label-button-menu--color;
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }

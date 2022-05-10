@@ -1,0 +1,7 @@
+@import '../../abstract/base';
+
+.wallet__title {
+    grid-area: wallet__title;
+    font-size: 2.5rem;
+    color: $tertiary-color;
+}

@@ -1,6 +1,10 @@
+@import '../../abstract/variables';
+
 .banner__text {
     letter-spacing: 1rem;
     font-size: 1.9rem;
+    color: $tertiary-color;
+    font-weight: 700;
 }
 
 .banner__text::first-line {

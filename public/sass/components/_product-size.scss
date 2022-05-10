@@ -1,38 +1,52 @@
+@import '../abstract/base';
+
+// @mixin test($par1) {
+//     display: $par1;
+// }
+
+// .test {
+//     padding:0;
+// }
+
 .product__size {
     border: none;
+
     display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+
     font-size: 1.8rem;
     font-weight: 700;
-    justify-content: space-around;
-    padding: 0;
     text-align: center;
+
+    padding: 0;
     width: 12rem;
-    align-self: flex-end;
     padding-bottom: 1.2rem;
+
+    // @extend .test;
 
     .size__input {
         display: none;
 
         &:checked+.size__label {
-            background-color: black;
-            // @include border();
-            border: 1px solid;
-            color: #FFFFFF;
+            background-color: $tertiary-color;
+            border: 1px solid ;
+            color: $fourth-color;
         }
     }
 
     .size__label {
-        background-color: #ffffffad;
         border-radius: 30%;
-        border: solid .1rem;
+        border: solid .1rem $tertiary-color;
         display: flex;
         justify-content: center;
         height: 2.7rem;
         margin: .7rem;
         width: 1.5em;
+        color: $tertiary-color;
 
         &:hover {
-            background-color: #e6e6e6;
+            background-color: $fourth-color;
             cursor: pointer;
         }
     }

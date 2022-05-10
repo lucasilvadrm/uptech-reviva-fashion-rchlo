@@ -1,37 +1,13 @@
+$column-gap--value: 3rem;
+
 .wallet {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     display: grid;
-    column-gap: 4rem;
+    column-gap: $column-gap--value;
     grid-template-rows: 5rem 1fr;
-    grid-template-columns: calc(80% - 4rem) 20%;
+    grid-template-columns: calc(80% - $column-gap--value) 20%;
     grid-template-areas: 
     "wallet__title wallet__title"
     "wallet__list cart-total";
-
-    .wallet__title {
-        grid-area: wallet__title;
-    }
-
-    .cart-total {
-        grid-area: cart-total;
-    }
-
-    .wallet__list {
-        grid-area: wallet__list;
-        .wallet__item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 3rem;
-            .detail__thumb {
-                border: 1px solid;
-                max-width: 18rem;
-                padding: 10px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-    }
 }
