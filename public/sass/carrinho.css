@@ -218,7 +218,6 @@ input {
 }
 
 .product__size .size__label {
-  border-radius: 30%;
   border: solid 0.1rem #6a808f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,7 +311,6 @@ input {
   background-color: #6a808f;
   position: relative;
   color: #FFFFFF;
-  font-size: 1.3rem;
 }
 
 .search__button {
@@ -546,6 +544,17 @@ input {
 .footer .contact__item {
   margin-bottom: 1rem;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .footer {
+    height: auto;
+    margin-bottom: 8rem;
+    row-gap: 2rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo" "menu-itens" "social-media" "contact" "newsletter";
+  }
 }
 
 .logo--justify {

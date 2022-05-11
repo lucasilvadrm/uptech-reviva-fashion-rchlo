@@ -1,13 +1,5 @@
 @import '../abstract/base';
 
-// @mixin test($par1) {
-//     display: $par1;
-// }
-
-// .test {
-//     padding:0;
-// }
-
 .product__size {
     border: none;
 
@@ -23,8 +15,6 @@
     width: 12rem;
     padding-bottom: 1.2rem;
 
-    // @extend .test;
-
     .size__input {
         display: none;
 
@@ -36,7 +26,6 @@
     }
 
     .size__label {
-        border-radius: 30%;
         border: solid .1rem $tertiary-color;
         display: flex;
         justify-content: center;
