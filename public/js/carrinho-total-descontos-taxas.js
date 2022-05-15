@@ -16,13 +16,13 @@ const porcentagemDesconto = (taxa) => {
     return taxa / 100;
 }
 
-const aplicarDescontosEtaxas = (taxa) => {
+const aplicarDescontosEtaxas = (taxaCamiseta, taxaJeans) => {
     produtos.forEach((valor, indice) => {
         if (valor.includes('Camiseta')) {
-            let desconto = calcularDesconto(precos[indice], taxa);
+            let desconto = calcularDesconto(precos[indice], taxaCamiseta);
             precos.splice(indice, 1, desconto);
         } else if (valor.includes('Jeans')) {
-            let aplicarTaxaAdicional = calcularTaxaAdicional(precos[indice], 3.99);
+            let aplicarTaxaAdicional = calcularTaxaAdicional(precos[indice], taxaJeans);
             precos.splice(indice, 1, aplicarTaxaAdicional);
         }
     })
@@ -49,7 +49,7 @@ const formatarValor = (valor) => {
 }
 
 const calcularTotal = () => {
-    aplicarDescontosEtaxas(10)
+    aplicarDescontosEtaxas(10, 3.99)
     retornaDuplicados(precos)
     aplicarDescontoSegundoProduto(5)
     const valorTotal = precos.reduce((anterior, atual) => anterior + atual);
