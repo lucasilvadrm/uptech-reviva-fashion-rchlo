@@ -3,13 +3,13 @@ const produtos = ['Camiseta Básica', 'Camiseta Polo', 'Bermuda Moletom', 'Calç
 const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90];
 
 const calcularDesconto = (valor, taxa) => {
-    let desconto = valor - (valor * porcentagemDesconto(taxa));
-    return Number(desconto.toFixed(2));
+    const desconto = valor - (valor * porcentagemDesconto(taxa));
+    return desconto;
 }
 
 const calcularTaxaAdicional = (valor, taxa) => {
-    let taxaAplicada = valor + taxa;
-    return Number(taxaAplicada.toFixed(2));
+    const taxaAplicada = valor + taxa;
+    return taxaAplicada;
 }
 
 const porcentagemDesconto = (taxa) => {
@@ -17,11 +17,13 @@ const porcentagemDesconto = (taxa) => {
 }
 
 const aplicarDescontosEtaxas = (taxaCamiseta, taxaJeans) => {
-    produtos.forEach((valor, indice) => {
-        if (valor.includes('Camiseta')) {
+    produtos.forEach((nomeProduto, indice) => {
+        if (nomeProduto.includes('Camiseta')) {
             let desconto = calcularDesconto(precos[indice], taxaCamiseta);
             precos.splice(indice, 1, desconto);
-        } else if (valor.includes('Jeans')) {
+        }
+
+        if (nomeProduto.includes('Jeans')) {
             let aplicarTaxaAdicional = calcularTaxaAdicional(precos[indice], taxaJeans);
             precos.splice(indice, 1, aplicarTaxaAdicional);
         }
@@ -35,11 +37,11 @@ const retornaDuplicados = (array) => {
 
 const aplicarDescontoSegundoProduto = (taxa) => {
     const duplicados = retornaDuplicados(precos);
-    for (let i = 0; i < duplicados.length; i++) {
-        let indice = precos.indexOf(duplicados[i]); //pegar o indice quando existir o valor no array de carrinho
-        let desconto = calcularDesconto(duplicados[i], taxa);
+    duplicados.forEach(valorProduto => {
+        let indice = precos.indexOf(valorProduto);
+        let desconto = calcularDesconto(valorProduto, taxa);
         if (indice != -1) precos.splice(indice, 1, desconto);
-    }
+    })
 
     console.table(precos)
 }
