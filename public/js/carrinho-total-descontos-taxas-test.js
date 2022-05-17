@@ -16,36 +16,48 @@ const porcentagemDesconto = (taxa) => {
     return taxa / 100;
 }
 
-const aplicarDescontosEtaxas = (taxaCamiseta, taxaJeans) => {
-    produtos.forEach((nomeProduto, indice) => {
+const aplicarDescontosEtaxas = (produtos, precos, taxaCamiseta, taxaJeans) => {
+    let produtosTemp = [...produtos]
+    let precosTemp = [...precos]
+
+    produtosTemp.forEach((nomeProduto, indice) => {
         if (nomeProduto.includes('Camiseta')) {
             let desconto = calcularDesconto(precos[indice], taxaCamiseta);
-            precos.splice(indice, 1, desconto);
+            precosTemp.splice(indice, 1, desconto);
         }
 
         if (nomeProduto.includes('Jeans')) {
             let aplicarTaxaAdicional = calcularTaxaAdicional(precos[indice], taxaJeans);
-            precos.splice(indice, 1, aplicarTaxaAdicional);
+            precosTemp.splice(indice, 1, aplicarTaxaAdicional);
         }
     })
-}
 
+    return precosTemp;
+}
 
 const retornaDuplicados = (array) => {
     const arrayFiltrado = array.filter((valor, indice) => array.indexOf(valor) !== indice);
     return [...new Set(arrayFiltrado)];
 }
 
-const aplicarDescontoSegundoProduto = (taxa) => {
-    
-    const duplicados = retornaDuplicados(precos);
+const aplicarDescontoSegundoProduto = (precos, taxa) => {
+    let precosTemp = [...precos];
+
+    const duplicados = retornaDuplicados(precosTemp);
     duplicados.forEach(valorProduto => {
-        let indice = precos.indexOf(valorProduto);
+        let indice = precosTemp.indexOf(valorProduto);
         let desconto = calcularDesconto(valorProduto, taxa);
-        if (indice != -1) precos.splice(indice, 1, desconto);
+        if (indice != -1) precosTemp.splice(indice, 1, desconto);
     })
 
-    console.table(precos)
+    // console.table(precos)
+    return precosTemp;
+}
+
+const aplicarDescontosEtaxasTotal = () => {
+    const precosComTaxasDescontos = aplicarDescontosEtaxas(produtos, precos, 10, 3.99);
+    retornaDuplicados(precosComTaxasDescontos)
+    const descontoSegundoProduto = aplicarDescontoSegundoProduto(precosComTaxasDescontos, 5)
 }
 
 const formatarValor = (valor) => {
@@ -53,10 +65,10 @@ const formatarValor = (valor) => {
 }
 
 const calcularTotal = () => {
-    aplicarDescontosEtaxas(10, 3.99);
-    retornaDuplicados(precos);
-    aplicarDescontoSegundoProduto(5);
-    const valorTotal = precos.reduce((anterior, atual) => anterior + atual);
+    const precosComTaxasDescontos = aplicarDescontosEtaxas(produtos, precos, 10, 3.99)
+    retornaDuplicados(precosComTaxasDescontos)
+    const descontoSegundoProduto = aplicarDescontoSegundoProduto(precosComTaxasDescontos, 5)
+    const valorTotal = descontoSegundoProduto.reduce((anterior, atual) => anterior + atual);
     return formatarValor(valorTotal);
 }
 

@@ -31,7 +31,8 @@ const formatarValor = (valor) => {
 }
 
 const totalCarrinho = () => {
-    const valorTotal = aplicarDesconto(carrinho, 10).reduce((anterior, atual) => anterior + atual);
+    const descontoAplicado = aplicarDesconto(carrinho, 10);
+    const valorTotal = descontoAplicado.reduce((anterior, atual) => anterior + atual);
     return formatarValor(valorTotal);
 }
 

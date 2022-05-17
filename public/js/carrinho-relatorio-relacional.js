@@ -11,7 +11,7 @@ const formatarValor = (valor) => {
 const verificarProduto = (descricaoProduto) => {
     let quantidade = 0;
     let valor = 0.0;
-    produtos.filter((produto, indice) => {
+    produtos.forEach((produto, indice) => {
         if (produto.includes(descricaoProduto)) {
             quantidade++;
             valor = precos[indice];
