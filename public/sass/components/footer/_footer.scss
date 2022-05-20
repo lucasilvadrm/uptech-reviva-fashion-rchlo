@@ -30,16 +30,16 @@
         font-size: 1.8rem;
     }
 
-    @media screen and (max-width: 1110px) {
-        height: auto;
-        margin-bottom: 8rem;
-        row-gap: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "logo"
-            "menu-itens"
-            "social-media"
-            "contact"
-            "newsletter";
-    }
+    // @media screen and (max-width: 1110px) {
+    //     height: auto;
+    //     margin-bottom: 8rem;
+    //     row-gap: 2rem;
+    //     grid-template-columns: 1fr;
+    //     grid-template-areas:
+    //         "logo"
+    //         "menu-itens"
+    //         "social-media"
+    //         "contact"
+    //         "newsletter";
+    // }
 }

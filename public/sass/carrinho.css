@@ -546,17 +546,6 @@ input {
   font-size: 1.8rem;
 }
 
-@media screen and (max-width: 1110px) {
-  .footer {
-    height: auto;
-    margin-bottom: 8rem;
-    row-gap: 2rem;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "logo" "menu-itens" "social-media" "contact" "newsletter";
-  }
-}
-
 .logo--justify {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

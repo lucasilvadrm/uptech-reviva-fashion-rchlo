@@ -1,0 +1,14 @@
+.item__description {
+    margin: 1.6rem 0;
+    display: grid;
+    gap: .6rem;
+
+    .item__title,
+    .item__price {
+        font-size: 1.5rem;
+    }
+
+    .item__price {
+        font-weight: 700;
+    }
+}

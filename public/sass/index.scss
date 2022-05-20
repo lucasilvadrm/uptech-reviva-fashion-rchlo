@@ -1,0 +1,43 @@
+@import './abstract/base';
+
+// utils
+@import './components/utils';
+
+// import header
+@import './components/header/global';
+
+// import logo
+@import './components/logo/global';
+
+// import menu
+@import './components/menu/global';
+
+//import main
+@import './components/main/global';
+
+//import input search
+@import './components/search/global';
+
+// radio-button product-size
+@import './components/product-size';
+
+// buttons
+@import './components/buttons';
+
+//icons
+@import './components/icons';
+
+// banner
+@import './components/banner/global';
+
+// related-products
+@import './components/last-releases/global';
+
+//summer-collection
+@import './components/summer-collection/global';
+
+// blog-info
+@import './components/blog-intro/global';
+
+// import footer
+@import './components/footer/global';

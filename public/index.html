@@ -4,8 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="sass/index.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -14,350 +14,268 @@
 
 <body>
     <header class="header">
-        <div class="header-title title-main">
-            <h1>Reviva Fashion</h1>
-            <span>By RCHLO</span>
+        <div class="logo">
+            <h1 class="logo__title">Reviva Fashion</h1>
+            <span class="logo__subtitle">by RCHLO</span>
         </div>
-        <img class="icon-purchase" src="./images/purchase-icon-grey.png" alt="ícone carrinho de compras cinza">
+        <a href="./carrinho.html"><i aria-label="ícone sacola de compras"
+                class="fa-solid fa-bag-shopping icon__purchase--header"></i></a>
+
     </header>
     <nav class="menu">
-        <ul>
-            <li><a href="#">Página Inicial</a></li>
-            <li><a href="#">Moda Masculina</a></li>
-            <li><a href="#">Moda Feminina</a></li>
-            <li><a href="#">Moda Infantil</a></li>
-            <li><a href="#">Manual de Moda</a></li>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#">Página Inicial</a></li>
+            <li class="menu__item"><a href="#">Moda Masculina</a></li>
+            <li class="menu__item"><a href="#">Moda Feminina</a></li>
+            <li class="menu__item"><a href="#">Moda Infantil</a></li>
+            <li class="menu__item"><a href="#">Manual de Moda</a></li>
         </ul>
     </nav>
-    <main class="container-main">
+    <main class="container">
         <div class="search">
-            <input type="text" placeholder="Faça sua busca aqui se já souber o que está procurando...">
-            <button class="btn-search all-buttons">
-                <img class="image-search" src="./images/search.png" alt="ícone de pesquisa">
+            <input type="text" class="search__input"
+                placeholder="Faça sua busca aqui se já souber o que está procurando...">
+            <button class="search__button">
+                <i aria-label="ícone de pesquisa" class="fa-solid fa-magnifying-glass search__icon"></i>
             </button>
         </div>
         <section class="last-releases">
-            <h2 class="last-releases--title">Últimos Lançamentos</h2>
-            <ul class="last-releases--list">
-                <li class="item">
-                    <div class="product">
+            <h2 class="last-releases__title">Últimos Lançamentos</h2>
+            <ul class="last-releases__list">
+                <li class="last-releases__item">
+                    <div class="item__details">
                         <img src="images/products/lancamento-1.png" alt="cropped feminina com linho animal">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-p1">
+                            <label class="size__label" for="size-p1">P</label>
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-m1">
+                            <label class="size__label" for="size-m1">M</label>
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-g1">
+                            <label class="size__label" for="size-g1">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Camisa Cropped Feminina com Linho Animal Print Verde AK by Riachuelo</h3>
-                        <p class="price">R$ 139,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Camisa Cropped Feminina com Linho Animal Print Verde AK by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 139,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
-                <li class="item">
-                    <div class="product">
+                <li class="last-releases__item">
+                    <div class="item__details">
                         <img src="images/products/lancamento-2.png" alt="cropped feminina manga longa">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-p2">
+                            <label class="size__label" for="size-p2">P</label>
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-m2">
+                            <label class="size__label" for="size-m2">M</label>
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-g2">
+                            <label class="size__label" for="size-g2">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Blusa Cropped Feminina Manga Longa Stranger Things Bege</h3>
-                        <p class="price">R$ 89,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Blusa Cropped Feminina Manga Longa Stranger Things Bege
+                        </h3>
+                        <p class="item__price">R$ 89,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
-                <li class="item">
-                    <div class="product">
+                <li class="last-releases__item">
+                    <div class="item__details">
                         <img src="images/products/lancamento-3.png" alt="Vestido feminino floral">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-p3">
+                            <label class="size__label" for="size-p3">P</label>
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-m3">
+                            <label class="size__label" for="size-m3">M</label>
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-g3">
+                            <label class="size__label" for="size-g3">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Vestido Midi Feminino Evasê Uma Maria Floral Preto Pool by Riachuelo</h3>
-                        <p class="price">R$ 199,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Vestido Midi Feminino Evasê Uma Maria Floral Preto Pool by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 199,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
-                <li class="item">
-                    <div class="product">
+                <li class="last-releases__item">
+                    <div class="item__details">
                         <img src="images/products/lancamento-4.png" alt="saia midi feminina">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-p4">
+                            <label class="size__label" for="size-p4">P</label>
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-m4">
+                            <label class="size__label" for="size-m4">M</label>
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-g4">
+                            <label class="size__label" for="size-g4">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Saia Midi Feminina Evasê Floral Preto AK by Riachuelo</h3>
-                        <p class="price">R$ 159,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Saia Midi Feminina Evasê Floral Preto AK by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 159,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
             </ul>
         </section>
 
         <a href="#" class="banner">
-            <p class="banner-text">
+            <p class="banner__text">
                 Fique por dentro de tudo que há de novidade no mundo da moda!
                 <br>Baixe já nosso manual de moda!
             </p>
-            <div class="banner-title">
+            <div class="banner__title">
                 <h1>Reviva Fashion</h1>
                 <span>By RCHLO</span>
             </div>
         </a>
         <section class="summer-collection">
-            <h2 class="summer-collection--title">Coleção de Verão 2022</h2>
-            <ul class="summer-collection--list">
-                <li class="item">
-                    <div class="product">
+            <h2 class="summer-collection__title">Coleção de Verão 2022
+            </h2>
+            <ul class="summer-collection__list">
+                <li class="summer-collection__item">
+                    <div class="item__details">
                         <img src="images/products/verao-1.png" alt="top cropped feminino">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product5" id="size-p5">
+                            <label class="size__label" for="size-p5">P</label>
+                            <input class="size__input" type="radio" name="select-size--product5" id="size-m5">
+                            <label class="size__label" for="size-m5">M</label>
+                            <input class="size__input" type="radio" name="select-size--product5" id="size-g5">
+                            <label class="size__label" for="size-g5">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Top Cropped Feminino Frente Única Verde AK by Riachuelo</h3>
-                        <p class="price">R$ 69,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Top Cropped Feminino Frente Única Verde AK by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 69,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
-                <li class="item">
-                    <div class="product">
+                <li class="summer-collection__item">
+                    <div class="item__details">
                         <img src="images/products/verao-2.png" alt="Camiseta Masculina Manga Curta">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product6" id="size-p6">
+                            <label class="size__label" for="size-p6">P</label>
+                            <input class="size__input" type="radio" name="select-size--product6" id="size-m6">
+                            <label class="size__label" for="size-m6">M</label>
+                            <input class="size__input" type="radio" name="select-size--product6" id="size-g6">
+                            <label class="size__label" for="size-g6">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Camiseta Masculina Manga Curta Ursinhos Carinhosos Rosa</h3>
-                        <p class="price">R$ 59,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Camiseta Masculina Manga Curta Ursinhos Carinhosos Rosa
+                        </h3>
+                        <p class="item__price">R$ 59,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
-                <li class="item">
-                    <div class="product">
+                <li class="summer-collection__item">
+                    <div class="item__details">
                         <img src="images/products/verao-3.png" alt="Vestido Midi Feminino azul">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-p7">
+                            <label class="size__label" for="size-p7">P</label>
+                            <input class="size__input" type="radio" name="select-size--product7" id="size-m7">
+                            <label class="size__label" for="size-m7">M</label>
+                            <input class="size__input" type="radio" name="select-size--product7" id="size-g7">
+                            <label class="size__label" for="size-g7">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Vestido Midi Feminino Evasê Viscolinho Geométrico Azul AK by Riachuelo</h3>
-                        <p class="price">R$ 239,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Vestido Midi Feminino Evasê Viscolinho Geométrico Azul AK by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 239,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
-                <li class="item">
-                    <div class="product">
+                <li class="summer-collection__item">
+                    <div class="item__details">
                         <img src="images/products/verao-4.png" alt="Top Cropped Feminino Bege">
-                        <div class="product-size">
-                            <ul>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">P</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">M</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="select-size">
-                                        <a href="#">G</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product8" id="size-p8">
+                            <label class="size__label" for="size-p8">P</label>
+                            <input class="size__input" type="radio" name="select-size--product8" id="size-m8">
+                            <label class="size__label" for="size-m8">M</label>
+                            <input class="size__input" type="radio" name="select-size--product8" id="size-g8">
+                            <label class="size__label" for="size-g8">G</label>
+                        </fieldset>
                     </div>
-                    <div class="description-item">
-                        <h3 class="product-description">Top Cropped Feminino Frente Única Amarração com Linho Listrado Bege Pool by Riachuelo</h3>
-                        <p class="price">R$ 79,90</p>
+                    <div class="item__description">
+                        <h3 class="item__title">Top Cropped Feminino Frente Única Amarração com Linho Listrado
+                            Bege Pool by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 79,90</p>
                     </div>
-                    <button class="btn-shopping-cart all-buttons">POR NA SACOLA
-                        <img class="icon-purchase" src="./images/purchase-icon-white.png"
-                            alt="ícone carrinho de compras branco">
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
                     </button>
                 </li>
             </ul>
         </section>
 
         <section class="blog-intro">
-            <h2 class="blog-title">Na dúvida sobre combinar suas roupas e ficar Incrível? <br> Confira nossas dicas em
+            <h2 class="blog__title">Na dúvida sobre combinar suas roupas e ficar Incrível? <br> Confira nossas dicas em
                 nosso blog.</h2>
             <article class="article-big">
-                <div class="image">
-                    
+                <div class="article-big__image">
+                    <a href=""><img src="" alt=""></a>
                 </div>
-                <p class="description">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas
+                <p class="article-big__description">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas
                     mesmas peças no inverno e continuar na moda!</p>
             </article>
-            <article class="article-small-top display">
-                <div class="image">
-                    
+            <article class="article-small--top display">
+                <div class="article-small--top__image">
+                    <a href=""><img src="" alt=""></a>
                 </div>
-                <p class="description">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas
+                <p class="article-small--top__description">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas
                     mesmas peças no inverno e continuar na moda!</p>
             </article>
-            <article class="article-small-bottom display">
-                <div class="image">
-                    
+            <article class="article-small--bottom display">
+                <div class="article-small--bottom__image">
+                    <a href=""><img src="" alt=""></a>
                 </div>
-                <p class="description">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas
+                <p class="article-small--bottom__description">O que fazer com o look que usou no carnaval? Confira já como fazer uso dessas
                     mesmas peças no inverno e continuar na moda!</p>
             </article>
         </section>
 
     </main>
-    <footer class="info-contact">
-        <div class="footer-title">
-            <h1>Reviva Fashion</h1>
-            <span>By RCHLO</span>
+    <footer class="footer">
+        <div class="logo logo--justify">
+            <h1 class="logo__title">Reviva Fashion</h1>
+            <span class="logo__subtitle">By RCHLO</span>
         </div>
-        <div class="menu-itens">
-            <h4 class="title">Menu</h4>
+        <div class="menu__itens">
+            <h4 class="menu__title">Menu</h4>
             <ul>
-                <li class="item"><a href="#">Página Inicial</a></li>
-                <li class="item"><a href="#">Moda Masculina</a></li>
-                <li class="item"><a href="#">Moda Feminina</a></li>
-                <li class="item"><a href="#">Manual da Moda</a></li>
+                <li class="menu__item"><a href="#">Página Inicial</a></li>
+                <li class="menu__item"><a href="#">Moda Masculina</a></li>
+                <li class="menu__item"><a href="#">Moda Feminina</a></li>
+                <li class="menu__item"><a href="#">Manual da Moda</a></li>
             </ul>
         </div>
+
         <div class="social-media">
-            <h4 class="title">Siga-no nas redes sociais</h4>
-            <ul class="social-media--list">
+            <h4 class="social-media__title">Siga-no nas redes sociais</h4>
+            <ul class="social-media__list">
                 <li class="item">
                     <a href="https://pt-br.facebook.com/" target="blank">
                         <figure>
@@ -388,35 +306,33 @@
                 </li>
             </ul>
         </div>
+
         <div class="contact">
-            <h4 class="title">Entre e contato</h4>
-            <p>Contato</p>
-            <ul>
-                <li class="item"><a href="#">reviva@rchio.com.br</a></li>
-                <li class="item">
-                    <div class="whatsapp-content">
-                        <a href="#">WhatsApp</a>
-                        <img src="./images/wpp-icon.png" alt="ícone do whatsapp">
-                    </div>
+            <h4 class="contact__title">Entre e contato</h4>
+            <ul class="contact__items">
+                <li class="contact__item contact__name">Contato</li>
+                <li class="contact__item"><a href="#">reviva@rchio.com.br</a></li>
+                <li class="contact__item whatsapp__content">
+                    <a href="#">WhatsApp</a>
+                    <i aria-label="icone whatsapp" class="fa-brands fa-whatsapp whatsapp__icon"></i>
                 </li>
-                <li class="item">
-                    <div class="phone-content">
-                        <a href="#">11 2123-3321</a>
-                        <img src="./images/phone-icon.png" alt="ícone de telefone">
-                    </div>
+                <li class="contact__item phone__content">
+                    <a class="phone__number" href="#">11 2123-3321</a>
+                    <i aria-label="ícone telefone" class="fa-solid fa-phone phone__icon"></i>
                 </li>
             </ul>
         </div>
         <div class="newsletter">
-            <h4 class="title">Assine nossa newsletter</h4>
-            <div class="input-button">
-                <input type="text">
-                <button class="all-buttons">
-                    <p>Assinar Já</p>
+            <h4 class="newsletter__title">Assine nossa newsletter</h4>
+            <div class="newsletter__sign">
+                <input class="newsletter__input" type="text">
+                <button class="newsletter__button">
+                    Assinar Já
                 </button>
             </div>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/3c39b8c1ad.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
