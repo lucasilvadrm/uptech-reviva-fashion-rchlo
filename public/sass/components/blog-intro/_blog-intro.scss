@@ -25,7 +25,7 @@
   
   .blog__title {
     grid-area: blog__title;
-    @extend .last-releases__title;
+    @extend .product-list__title;
   }
   
   .article-big {

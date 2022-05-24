@@ -1,5 +1,5 @@
 // const item = document.querySelector('.last-releases__item');
-const listaProdutos = document.querySelectorAll('.last-releases__item');
+const listaProdutos = document.querySelectorAll('.product-list__item');
 const produtosLocalStorage = JSON.parse(localStorage.getItem('produtos'));
 
 const estiloBotao = {
