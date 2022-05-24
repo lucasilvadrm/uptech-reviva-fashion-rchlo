@@ -2,6 +2,10 @@
 const listaProdutos = document.querySelectorAll('.last-releases__item');
 const produtosLocalStorage = JSON.parse(localStorage.getItem('produtos'));
 
+const estiloBotao = {
+    cor: '#C4C4C4',
+    texto: 'INDISPONÍVEL'
+}
 
 listaProdutos.forEach((item, indice) => {
     const urlImagem = produtosLocalStorage[indice].imagens[0].url;
@@ -54,8 +58,8 @@ listaProdutos.forEach((item, indice) => {
     adicionarClasse('icon__purchase', icone);
 
     if(quantidadeDisponivel === 0) {
-        tituloItem.style.textDecoration = "line-through";
-        botaoItem.innerHTML = 'INDISPONÍVEL';
+        botaoItem.innerHTML = estiloBotao.texto;
+        botaoItem.style.backgroundColor = estiloBotao.cor;
     }
 })
 
