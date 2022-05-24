@@ -521,6 +521,11 @@ input {
   margin-bottom: 1rem;
 }
 
+.article-big__image img {
+  width: 100%;
+  height: 100%;
+}
+
 .display {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,6 +545,12 @@ input {
 .article-small--top__image,
 .article-small--bottom__image {
   background-color: #C4C4C4;
+}
+
+.article-small--top__image img,
+.article-small--bottom__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .article-small--top__description, .article-small--top__image,
