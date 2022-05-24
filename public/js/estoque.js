@@ -7,7 +7,7 @@ export const estoque = [{
         tamanhos_disponiveis: ['P', 'M', 'G'],
         quantidade_disponivel: 10,
         imagens: [{
-            url: 'public/images/products/lancamento-1.png',
+            url: 'images/products/lancamento-1.png',
             descricao: 'Imagem grande de uma Camisa Cropped Feminina'
         }],
         thumbnail: [{
@@ -32,12 +32,12 @@ export const estoque = [{
         id: 2,
         nome: 'Blusa Cropped Feminina Manga Longa Stranger Things Bege',
         url: 'www.google.com',
-        preco: 139.90,
+        preco: 89.90,
         descricao: 'Enfrente o Demogorgon com a Blusa Cropped Feminina Manga Longa Stranger Things Bege ! Confeccionada em malha de algodão e poliéster, a peça vai deixar seus looks ainda mais estilosos e divertidos! Experimente combinar com short jeans e tênis casual para um look incrível!',
         tamanhos_disponiveis: ['P', 'M', 'G'],
         quantidade_disponivel: 5,
         imagens: [{
-            url: 'public/images/products/lancamento-2.png',
+            url: 'images/products/lancamento-2.png',
             descricao: 'Blusa Cropped Feminina Manga Longa Stranger Things Bege'
         }],
         thumbnail: [{
@@ -67,7 +67,7 @@ export const estoque = [{
         tamanhos_disponiveis: ['P', 'M', 'G'],
         quantidade_disponivel: 7,
         imagens: [{
-            url: 'public/images/products/lancamento-3.png',
+            url: 'images/products/lancamento-3.png',
             descricao: 'imagem grande Vestido Midi Feminino Evasê Uma Maria Floral Preto Pool'
         }],
         thumbnail: [{
@@ -97,7 +97,7 @@ export const estoque = [{
         tamanhos_disponiveis: ['P', 'M', 'G'],
         quantidade_disponivel: 3,
         imagens: [{
-            url: 'public/images/products/lancamento-4.png',
+            url: 'images/products/lancamento-4.png',
             descricao: 'imagem grande Saia Midi Feminina Evasê Floral Preto'
         }],
         thumbnail: [{

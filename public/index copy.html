@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/index.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -38,16 +39,92 @@
                 <i aria-label="ícone de pesquisa" class="fa-solid fa-magnifying-glass search__icon"></i>
             </button>
         </div>
-        <section id="last-releases" class="last-releases">
+        <section class="last-releases">
             <h2 class="last-releases__title">Últimos Lançamentos</h2>
             <ul class="last-releases__list">
                 <li class="last-releases__item">
+                    <div class="item__details">
+                        <img src="images/products/lancamento-1.png" alt="cropped feminina com linho animal">
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-p1">
+                            <label class="size__label" for="size-p1">P</label>
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-m1">
+                            <label class="size__label" for="size-m1">M</label>
+                            <input class="size__input" type="radio" name="select-size--product1" id="size-g1">
+                            <label class="size__label" for="size-g1">G</label>
+                        </fieldset>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__title">Camisa Cropped Feminina com Linho Animal Print Verde AK by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 139,90</p>
+                    </div>
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
+                    </button>
                 </li>
                 <li class="last-releases__item">
+                    <div class="item__details">
+                        <img src="images/products/lancamento-2.png" alt="cropped feminina manga longa">
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-p2">
+                            <label class="size__label" for="size-p2">P</label>
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-m2">
+                            <label class="size__label" for="size-m2">M</label>
+                            <input class="size__input" type="radio" name="select-size--product2" id="size-g2">
+                            <label class="size__label" for="size-g2">G</label>
+                        </fieldset>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__title">Blusa Cropped Feminina Manga Longa Stranger Things Bege
+                        </h3>
+                        <p class="item__price">R$ 89,90</p>
+                    </div>
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
+                    </button>
                 </li>
                 <li class="last-releases__item">
+                    <div class="item__details">
+                        <img src="images/products/lancamento-3.png" alt="Vestido feminino floral">
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-p3">
+                            <label class="size__label" for="size-p3">P</label>
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-m3">
+                            <label class="size__label" for="size-m3">M</label>
+                            <input class="size__input" type="radio" name="select-size--product3" id="size-g3">
+                            <label class="size__label" for="size-g3">G</label>
+                        </fieldset>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__title">Vestido Midi Feminino Evasê Uma Maria Floral Preto Pool by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 199,90</p>
+                    </div>
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
+                    </button>
                 </li>
                 <li class="last-releases__item">
+                    <div class="item__details">
+                        <img src="images/products/lancamento-4.png" alt="saia midi feminina">
+                        <fieldset class="product__size">
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-p4">
+                            <label class="size__label" for="size-p4">P</label>
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-m4">
+                            <label class="size__label" for="size-m4">M</label>
+                            <input class="size__input" type="radio" name="select-size--product4" id="size-g4">
+                            <label class="size__label" for="size-g4">G</label>
+                        </fieldset>
+                    </div>
+                    <div class="item__description">
+                        <h3 class="item__title">Saia Midi Feminina Evasê Floral Preto AK by Riachuelo
+                        </h3>
+                        <p class="item__price">R$ 159,90</p>
+                    </div>
+                    <button class="item__button">POR NA SACOLA
+                        <i aria-label="ícone sacola de compras" class="fa-solid fa-bag-shopping icon__purchase"></i>
+                    </button>
                 </li>
             </ul>
         </section>
@@ -256,8 +333,8 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/3c39b8c1ad.js" crossorigin="anonymous"></script>
-    <script src="/public/js/index.js" type="module"></script>
     <script src="/public/js/atualiza-estoque.js" type="module"></script>
+    <!-- <script src="/public/js/index.js" type="module"></script> -->
 </body>
 
 </html>

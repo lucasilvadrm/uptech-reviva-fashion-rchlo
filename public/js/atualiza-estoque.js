@@ -1,6 +1,6 @@
 import { estoque } from './estoque.js';
 
-const produtosLocalStorage = JSON.parse(localStorage.getItem('produtos')) 
+const produtosLocalStorage = JSON.parse(localStorage.getItem('produtos'))
 || localStorage.setItem("produtos", JSON.stringify(estoque));
 console.log(produtosLocalStorage);
 
@@ -15,19 +15,17 @@ function decrementarEstoque(produto) {
 }
 
 function atualizaEstoque(id, produtos) {
-    const produtosTemp = [...produtos]
+    const produtosTemp = [...produtos];
 
-    const retornaObjetoConformeId = produtosTemp.filter(produto => {
-        return produto.id === id;
-    })
+    const retornaObjetoConformeId = produtosTemp.filter(produto => produto.id === id);
 
     const produto = retornaObjetoConformeId[0];
 
     decrementarEstoque(produto);
 
     const capturarIndice = produtosLocalStorage.findIndex(elemento => elemento.id === produto.id);
-    produtosLocalStorage[capturarIndice] = produto
-    console.log(produtosLocalStorage)
+    produtosLocalStorage[capturarIndice] = produto;
+    console.log(produtosLocalStorage);
 
     localStorage.setItem("produtos", JSON.stringify(produtosLocalStorage));
 }
