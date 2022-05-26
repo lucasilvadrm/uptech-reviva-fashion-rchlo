@@ -1,5 +1,6 @@
 export const estoque = [{
         id: 1,
+        tag: 'lancamentos',
         nome: 'Camisa Cropped Feminina com Linho Animal Print Verde AK by Riachuelo',
         url: '',
         preco: 139.90,
@@ -30,6 +31,7 @@ export const estoque = [{
     },
     {
         id: 2,
+        tag: 'lancamentos',
         nome: 'Blusa Cropped Feminina Manga Longa Stranger Things Bege',
         url: '',
         preco: 89.90,
@@ -60,6 +62,7 @@ export const estoque = [{
     },
     {
         id: 3,
+        tag: 'lancamentos',
         nome: 'Vestido Midi Feminino Evasê Uma Maria Floral Preto Pool by Riachuelo',
         url: '',
         preco: 199.90,
@@ -90,6 +93,7 @@ export const estoque = [{
     },
     {
         id: 4,
+        tag: 'lancamentos',
         nome: 'Saia Midi Feminina Evasê Floral Preto AK by Riachuelo',
         url: '',
         preco: 159.90,
@@ -120,6 +124,7 @@ export const estoque = [{
     },
     {
         id: 5,
+        tag: 'colecao-verao',
         nome: 'Top Cropped Feminino Frente Única Verde AK by Riachuelo',
         url: '',
         preco: 69.90,
@@ -150,6 +155,7 @@ export const estoque = [{
     },
     {
         id: 6,
+        tag: 'colecao-verao',
         nome: 'Camiseta Masculina Manga Curta Malha Lisa Verde Pool by Riachuelo',
         url: '',
         preco: 49.90,
@@ -180,6 +186,7 @@ export const estoque = [{
     },
     {
         id: 7,
+        tag: 'colecao-verao',
         nome: 'Vestido Midi Feminino Evasê Viscolinho Geométrico Azul AK by Riachuelo',
         url: '',
         preco: 239.90,
@@ -210,6 +217,7 @@ export const estoque = [{
     },
     {
         id: 8,
+        tag: 'colecao-verao',
         nome: 'Top Cropped Feminino Frente Única Amarração com Linho Listrado Bege Pool by Riachuelo',
         url: '',
         preco: 79.90,

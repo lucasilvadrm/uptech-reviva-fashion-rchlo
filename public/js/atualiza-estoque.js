@@ -10,7 +10,6 @@ const estiloBotao = {
 
 const produtosLocalStorage = JSON.parse(localStorage.getItem('produtos')) ||
     localStorage.setItem("produtos", JSON.stringify(estoque));
-// const sacola = [];
 
 const botoes = document.querySelectorAll('.item__button');
 
@@ -18,31 +17,23 @@ botoes.forEach((botao, indice) => {
     botao.onclick = () => atualizaEstoque(indice + 1, produtosLocalStorage, botao);
 })
 
-function decrementarEstoque(produto) {
+function decrementarEstoque(produto, botao) {
     if (produto.quantidade_disponivel > 0) {
         produto.quantidade_disponivel--;
         alert(`Adicionado na sacola! Itens restantes: ${produto.quantidade_disponivel}`);
     } else {
-        alert(`${produto.nome} sem estoque!`);
-    }
-}
-
-function produtoIndisponivel(produto, botao) {
-    if (produto.quantidade_disponivel === 0) {
         botao.style.backgroundColor = estiloBotao.cor;
         botao.innerHTML = estiloBotao.texto;
+        alert(`${produto.nome} sem estoque!`);
     }
 }
 
 function atualizaEstoque(id, produtos, botao) {
     const produtosTemp = [...produtos];
 
-    const retornaObjetoConformeId = produtosTemp.filter(produto => produto.id === id);
+    const produto = produtosTemp.find(produto => produto.id === id);
 
-    const produto = retornaObjetoConformeId[0];
-
-    decrementarEstoque(produto);
-    produtoIndisponivel(produto, botao);
+    decrementarEstoque(produto, botao);
 
     const capturarIndice = produtosLocalStorage.findIndex(elemento => elemento.id === produto.id);
     produtosLocalStorage[capturarIndice] = produto;
