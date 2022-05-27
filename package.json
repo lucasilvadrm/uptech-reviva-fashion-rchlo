@@ -7,8 +7,8 @@
     "compile-sass": "sass public/sass:public/css",
     "compile-typescript": "tsc",
     "dev-server": "live-server --no-browser --port=3000 public",
-    "run-all": "concurrently 'npm run compile-sass' 'npm run dev-server' 'npm run compile-typescript'",
-    "start": "nodemon -e sass,ts --exec 'npm run run-all'"
+    "run-all": "concurrently \"npm run compile-sass\" \"npm run dev-server\" \"npm run compile-typescript\"",
+    "start": "nodemon -e sass,ts --exec \"npm run run-all\""
   },
   "repository": {
     "type": "git",
