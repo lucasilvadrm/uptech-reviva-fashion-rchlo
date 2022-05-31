@@ -36,10 +36,11 @@
 }
 
 .wallet__button {
-    @include properties(100%, 60%, 1.4rem, $tertiary-color);
+    @include properties(100%, 6rem, 1.4rem, $tertiary-color);
     align-self: flex-end;
     font-weight: 700;
     color: $label-button-menu--color;
+    margin-bottom: 1rem
 }
 
 .newsletter__button {

@@ -320,13 +320,14 @@ input {
 
 .wallet__button {
   width: 100%;
-  height: 60%;
+  height: 6rem;
   font-size: 1.4rem;
   background-color: #6a808f;
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: 700;
   color: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 .newsletter__button {
